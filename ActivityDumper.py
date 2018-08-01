@@ -18,9 +18,9 @@ def analyze(args, apk_queue, res_queue, output_data):
                         act = ""
                         
                         for act in a.get_activities(): 
-                                intent_list = a.get_intent_filters("activity",a$
+                                intent_list = a.get_intent_filters("activity",act)
                                 if INTENT_CATEGORY in str(intent_list):
-                                        log.log("Found an interesting activity!$
+                                        log.log("Found an interesting activity!")
                                         log.log(act)
                                         log.log(intent_list)
 
