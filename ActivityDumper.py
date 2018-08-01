@@ -13,7 +13,7 @@ def analyze(args, apk_queue, res_queue, output_data):
                         apk_file = apk_queue.get()
                         file_path = args.in_dir + "/" + apk_file
                         
-                        log.log("Checking: %s\n" % file_path)\
+                        log.log("Checking: %s\n" % file_path)
                         a,d,dx = AnalyzeAPK(file_path)
                         act = ""
                         
